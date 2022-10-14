@@ -132,7 +132,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/gczzz.github.io/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -188,6 +188,130 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://arbor1997.github.io/gczzz.github.io/2022/04/21/fiber/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/gczzz.github.io/images/avatar.gif">
+      <meta itemprop="name" content="Arbor">
+      <meta itemprop="description" content="与其感慨路难行，不如马上出发。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="万卷邮差">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/gczzz.github.io/2022/04/21/fiber/" class="post-title-link" itemprop="url">光纤的基本特性</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-04-21 20:22:37" itemprop="dateCreated datePublished" datetime="2022-04-21T20:22:37+08:00">2022-04-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-10-14 11:09:36" itemprop="dateModified" datetime="2022-10-14T11:09:36+08:00">2022-10-14</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ul>
+<li><p>光纤的基本特性</p>
+<ul>
+<li><p>损耗</p>
+<ul>
+<li>损耗就主要就是材料吸收和瑞利散射，材料吸收是由于材料本身特性引起的共振，比如石英玻璃会在紫外区和2um的远红外区存在振动共振，还有就是光纤中的杂质。其中最显著的是OH根离子，它在1.4um有主吸收峰和1.23um附近会有次吸收峰。目前通过OH根的浓度，把材料吸收控制得较低。</li>
+<li>瑞利散射是由于石英玻璃的随机密度涨落，折射率局部起伏，导致散射。波长越短越明显。目前常规1.55波段的光纤，损耗主要是瑞利散射引起的，大概就在0.12dB/km</li>
+</ul>
+</li>
+<li><p>色散</p>
+<ul>
+<li><p>因为有些原理我已经明白，就简单写写那些容易忘记的</p>
+</li>
+<li><p>色散本质上因为电磁波与介质的束缚电子相互作用，介质的响应速度与光波频率有关，这种特性全称为色度色散，简称色散</p>
+</li>
+<li><p>在零色散波长附近（差几纳米）的时候，应考虑三阶色散</p>
+</li>
+<li><p>而群速度色散为什么会比相速度还慢呢。其实可以简单理解为，包络由一大堆光组成的，它总体展现的速度，必定比其中最慢那个光还要慢，但又和他们是有一定关系的。</p>
+<ul>
+<li>群速度和什么有关，有个波数，波数其实也就和波长有关；第二点就是和折射率相关，而折射率又是和波长有关。而用数学公式表示的话，可表示为角频率对波数的求导。确实，波数代表1米走多少个波长，速度代表一秒走多少米，他们的积不就是代表1秒走多少个波长，恰恰就是所谓角频率的定义。接下来就可以讨论角频率和波数的关系了。<ul>
+<li>正比，那群速度恰等于相速度，波形传播过程是不会被扭曲的</li>
+<li>线性关系，ka+b的关系的话，群速度和相速度不相等，波包以群速度传播，波包里的峰和谷以相速度传播</li>
+<li>非线性关系，那就有意思了，也是非线性光学讨论来讨论去的东西，整个波包就会扭曲，怎么个扭曲呢，各种各样的，我们说的那些脉冲形状会变啊，展宽啊，各种各样的，简单来说的话，最根源的起因就是在这了吧。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>再聊回色散本身。色散又分所谓正色散，负色散或者说正常色散和反常色散。无非就是说它的折射率随波长变化，如果波长越长，折射率越小，光移动的速度就越快嘛，这就是所谓正常色散，目前常用的光纤是在1.3um这个为截止。相反的就是反常色散。其他不同的表达其实都是表达一个意思。</p>
+</li>
+<li><p>接下来再聊聊影响正负色散的因素。或者准确来说。影响零色散波长在哪个位置（多大的范围）的因素。</p>
+</li>
+<li><p>对了，书上通常表征色散是通过对传输常数β的泰勒展开，的讨论，一阶、二阶、三阶、多少多少阶、都是在讨论这个了。如β1就是群速度的倒数了。而β2就是所谓的群速度色散了，而色散参量D跟群速度色散就是个负相关罢了，说的都是同一件事，可能说在不同的场合，怎么用比较方便罢了。对了！！！还有就是β3就是俗称所谓的三阶色散了。所以β2是群速度色散，β3就是三阶色散，别再问为什么没有二阶色散了，叫法问题而已。</p>
+</li>
+<li><p>那什么时候会考虑所谓的三阶色散呢，在超短脉冲的场合下，零色散波长附近，就要考虑了，因为它会引起脉冲的畸变了。</p>
+</li>
+<li><p>言归正传，所以说色散就是要有考虑材料色散和波导色散</p>
+</li>
+<li><p>我们平常说的那些色散位移光纤，色散补偿光纤，就是通过改变波导结构，从而改变波导色散，可以稍微地改变零色散波长的位置。比如改变包层和纤芯的折射率差。</p>
+</li>
+<li><p>最常规的光孤子，就是通过在负色散区，让脉冲的负色散和非线性相平衡，从而形成一个稳定的脉冲进行传输。</p>
+</li>
+<li><p>色散还有个重要特性是由于群速度失配，不同波长的脉冲在光纤中以不同的群速度传输，这一特性导致了走离效应。创造了一个名词来表述两个脉冲的相互影响，走离参量d。</p>
+</li>
+<li><p>继续讨论一下偏振模色散。其实即便是单模光纤，都能够支持沿两正交方向偏振的简并模，因而单模光纤并非真正的单模。在光纤不受力的条件下（理想圆柱体），x方向偏振的模式是不会与正交的y方向偏振模式耦合。但对于真实的情况下，由于纤芯形状沿光纤长度方向随机变化，这种圆对称性即不复存在，从而破坏了模式简并，导致两偏振模的混合。应力的各向异性同样能破坏这种简并性。数学上表述的话，即β在x和y方向的偏振模稍有不同。光纤的这种性质也称之为模式双折射。那就可以引申出一些新的概念了，快轴、慢轴，拍长（两模式的功率周期性地交换）。</p>
+</li>
+<li><p>所以呢，以固定偏振态进入光纤的光，将以随机的方式改变其偏振态。偏振态的改变对连续波是无害的，因为大部分的光探测器都不会对入射光的偏振态的改变有响应，但对于长距离、短脉冲传输的通信系统来说，这问题就要考虑了。由于入射脉冲激发两个偏振分量，由于群速度色散，在输出端，脉冲就会展宽。因此偏振模色散PMD(polarization-mode<br>dispersion)对于长途光波系统就非常重要。</p>
+</li>
+<li><p>但其实距离足够远，远远大于10米，比如说100米以上的话，扰动平均后，偏振模色散会远远小于群速度色散。但在零色散波长传输时，又要不得不关注偏振模色散。是不是很绕，笑死。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://arbor1997.github.io/gczzz.github.io/2022/03/16/soliton/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -219,7 +343,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-08-27 21:21:47" itemprop="dateModified" datetime="2022-08-27T21:21:47+08:00">2022-08-27</time>
+      <time title="修改时间：2022-10-14 11:07:06" itemprop="dateModified" datetime="2022-10-14T11:07:06+08:00">2022-10-14</time>
     </span>
 
   
@@ -239,7 +363,7 @@
 <li>光纤中的调制不稳定需要反常色散条件，这种不稳定性表现为将连续或准连续的辐射分裂成一列超短脉冲</li>
 <li>线性稳定性分析</li>
 <li>连续波在光纤中传输时除了获得一个与功率有关的相移（和由于光纤损耗引起的功率减少）外，保持不变</li>
-<li>在得到上面⬆这个结论时，人们会问稳态解收到微扰时是否仍然稳定。然后发现微扰的频率要满足一个色散关系时，才具有非平凡解。会有一对±Ω相对于中心频率Ω0频率分量，这些频率分量对应与产生的两个频谱边带。</li>
+<li>在得到上面这个结论时，人们会问稳态解收到微扰时是否仍然稳定。然后发现微扰的频率要满足一个色散关系时，才具有非平凡解。会有一对±Ω相对于中心频率Ω0频率分量，这些频率分量对应与产生的两个频谱边带。</li>
 <li>色散关系5.1.6表面，稳态的稳定性主要取决于正负色散区。<ul>
 <li>正常色散的情形下，波数K对所有的Ω都为实数，并且该稳态在受到微扰时仍是稳定的。</li>
 <li>反常色散下，K有时会变成虚数，微扰随z指数增长，结果连续波解在β2&lt;0时具有固定的不稳定性。<ul>
